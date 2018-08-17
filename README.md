@@ -18,6 +18,6 @@ This is all that is required to setup linux hosts with various configurations.
 
 | Name | Description | Language | Done |
 |---|---|---|---|
-| Server Init | Minimal install script that installs git and pulls the repo | Bash | No |
+| minimal.sh | Minimal install script that installs git and pulls the repo | Bash | Yes |
 | Ansible Host Init | Install and setup of Ansible | Bash | No |
 | Docker Host Init | This is the minimal install script that installs git and pulls the repo | Bash | No |
