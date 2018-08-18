@@ -23,7 +23,7 @@ if  [ "$varA" != "$varB" ]; then
 		sudo mkdir /tmp/ansible-scripts
 		#copy the update script to the tmp dir
 		cp /opt/ansible-scripts/scripts/update.sh /tmp/ansible-scripts/update.sh
-		bin/bash /tmp/ansible-scripts/update.sh
+		/bin/bash /tmp/ansible-scripts/update.sh
 fi
 	#curl -sSL https://raw.githubusercontent.com/ed-wright/ansible-scripts/master/version.txt
 	#cat /opt/ansible-scripts/version.txt
