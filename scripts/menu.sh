@@ -1,7 +1,16 @@
 #!/bin/bash
 
 # Check the script is running as root
+if [ "$EUID" -ne 0 ]; then
+	printf "Please run this script as root\n"
+	exit 1
+fi
+
 # Check this script is up to date
+	
+	curl -sSL https://raw.githubusercontent.com/ed-wright/ansible-scripts/master/version.txt
+	cat /opt/ansible-scripts/version.txt
+	
 # Show user selection of scripts
 # Execute selection
 
