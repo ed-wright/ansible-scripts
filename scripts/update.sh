@@ -5,4 +5,4 @@ git fetch --all
 git reset --hard origin/master
 git pull origin master
 
-bin/bash /opt/ansible-scripts/scripts/menu.sh
+/bin/bash /opt/ansible-scripts/scripts/menu.sh
