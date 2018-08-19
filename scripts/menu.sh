@@ -34,6 +34,7 @@ do
     case $opt in
         "Install Ansible Host")
 			source /opt/ansible-scripts/scripts/ansible-host-init.sh
+			exit 0
             ;;
         "Quit")
             exit 0
