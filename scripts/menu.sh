@@ -10,7 +10,7 @@ fi
 # Check this script is up to date
 sudo git fetch
 varA=$(git rev-parse HEAD)
-varB=$(git rev-parse @{u})
+varB=$(git rev-parse "@{u}")
 
 if  [ "$varA" != "$varB" ]; then
 		printf "Your script is out of date, updating..."
