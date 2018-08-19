@@ -14,11 +14,13 @@ printf "\nTASK: [Update Host]"
 sudo yum update -y
 
 printf "\nTASK: [Intall EPEL Repository]"
-sudo yum install epel-release
+sudo yum install epel-release -y
 
 printf "\nTASK: [Intall Ansible]"
-sudo yum install ansible
+sudo yum install ansible -y
 
 printf "\nTASK: [Create Ansible Hosts File]"
 
 #curl -sSL https://raw.githubusercontent.com/ed-wright/ansible-scripts/master/version.txt
+
+exit 0
