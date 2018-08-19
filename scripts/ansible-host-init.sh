@@ -3,23 +3,23 @@
 # Check if the script is running as root
 if [ "$EUID" -ne 0 ]
   then printf "Please run this script as root"
-  exit
+  exit 1
 fi
 
 printf "*********************************"
 printf "* Init Script for: Ansible Host *"
 printf "*********************************"
 
-printf "\nTASK: [Update Host]"
+printf "\n\033[32mTASK: [Update Host]\033[0m\n"
 sudo yum update -y
 
-printf "\nTASK: [Intall EPEL Repository]"
+printf "\n\033[32mTASK: [Intall EPEL Repository]\033[0m\n"
 sudo yum install epel-release -y
 
-printf "\nTASK: [Intall Ansible]"
+printf "\n\033[32mTASK: [Intall Ansible]\033[0m\n"
 sudo yum install ansible -y
 
-printf "\nTASK: [Create Ansible Hosts File]"
+printf "\n\033[32mTASK: [Create Ansible Hosts File]\033[0m\n"
 
 #curl -sSL https://raw.githubusercontent.com/ed-wright/ansible-scripts/master/version.txt
 
