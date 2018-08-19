@@ -41,6 +41,6 @@ sudo ~/minimal.sh
 |---|---|---|---|
 | minimal.sh | Minimal install script that installs git and pulls the repo | Bash | Yes |
 | menu.sh | This is your starting point | Bash | Yes |
-| update.sh | Updates the repo, DO NOT RUN THIS, use menu.sh | Bash | yes |
+| update.sh | Updates the repo, DO NOT RUN THIS, use menu.sh | Bash | Yes |
 | Ansible Host Init | Install and setup of Ansible | Bash | In Progress |
 | Docker Host Init | This is the minimal install script that installs git and pulls the repo | Bash | No |
