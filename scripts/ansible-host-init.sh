@@ -20,6 +20,7 @@ printf "\n\033[32mTASK: [Intall Ansible]\033[0m\n"
 sudo yum install ansible -y
 
 printf "\n\033[32mTASK: [Create Ansible Hosts File]\033[0m\n"
+sudo touch /etc/ansible
 
 #curl -sSL https://raw.githubusercontent.com/ed-wright/ansible-scripts/master/version.txt
 
