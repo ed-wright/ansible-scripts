@@ -33,7 +33,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Install Ansible Host")
-			/bin/bash /opt/ansible-scripts/scripts/ansible-host-init.sh
+			source /opt/ansible-scripts/scripts/ansible-host-init.sh
             ;;
         "Quit")
             exit 0
